@@ -15,9 +15,15 @@ console.log(book.author); // Output: Harper Lee
 console.log(book.pages);  // Output: 281
 
 // TODO 1: Create a `movie` object
-// Create an object named `movie` with the following properties:
-// `title` (string), `director` (string), `year` (number)
-// Log each property using dot notation.
+const movie = {
+  title: 'Bram Stokers Dracula',
+  director: 'Francis Ford Coppola',
+  year: 1992
+};
+console.log("\nToDo 1: Movie");
+console.log(movie.title);  // Output: To Kill a Mockingbird
+console.log(movie.director); // Output: Harper Lee
+console.log(movie.year); 
 
 
 // Example 2: Creating a Pet Object
@@ -36,7 +42,15 @@ console.log(pet.age);     // Output: 5
 // Create an object named `city` with the following properties:
 // `name` (string), `population` (number), `country` (string)
 // Log each property using dot notation.
-
+const city = {
+  name: 'Montreal',
+  population: '1,800,055',
+  country: 'Canada'
+};
+console.log("\nToDo 2: City");
+console.log(city.name);    // Output: Whiskers
+console.log(city.population); // Output: Cat
+console.log(city.country); 
 
 // Example 3: Creating a Car Object
 const car = {
@@ -54,7 +68,15 @@ console.log(car.year);   // Output: 2021
 // Create an object named `computer` with the following properties:
 // `brand` (string), `processor` (string), `ram` (number)
 // Log each property using dot notation.
-
+const computer = {
+  brand: 'Apple',
+  processor: 'Intel',
+  ram: '100GB',
+};
+console.log("\nToDo 3: Computer");
+console.log(computer.brand);  
+console.log(computer.processor);  
+console.log(computer.ram);
 
 // Example 4: Creating a Product Object
 const product = {
@@ -72,7 +94,16 @@ console.log(product.inStock); // Output: true
 // Create an object named `restaurant` with the following properties:
 // `name` (string), `type` (string), `rating` (number)
 // Log each property using dot notation.
+const restaurant = {
+  name: 'Crepe Nanou',
+  type: 'French',
+  rating: '4 stars'
+};
 
+console.log("\nToDo 4: Restaurant");
+console.log(restaurant.name);    // Output: Laptop
+console.log(restaurant.type);   // Output: 999.99
+console.log(restaurant.rating); 
 
 // Example 5: Creating a Student Object
 const student = {
@@ -90,4 +121,13 @@ console.log(student.grade);     // Output: A
 // Create an object named `house` with the following properties:
 // `address` (string), `size` (number), `hasGarage` (boolean)
 // Log each property using dot notation.
+const house = {
+  address: '1234 Jena St.',
+  size: '2bdrm, 1 bth',
+  hasGarage: 'No'
+};
 
+console.log("\nToDo 5: House");
+console.log(house.address); // Output: John
+console.log(house.size);  // Output: Doe
+console.log(house.hasGarage);  
