@@ -152,6 +152,7 @@ const restaurant = {
   reopen: function() {
     console.log(`${this.name}, the well known ${this.type} restaurant is now rated ${this.rating} stars`);
   }
+  
 }
 
 console.log("\nToDo 4: Restaurant");
@@ -159,6 +160,7 @@ console.log("\nToDo 4: Restaurant");
 restaurant.reopen(); 
 restaurant.addRating(); 
 restaurant.reopen();
+console.log(restaurant.inStock);
 
 
 
