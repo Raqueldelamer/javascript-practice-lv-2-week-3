@@ -143,20 +143,23 @@ console.log(product.inStock); // Output: false
 const restaurant = {
   name: 'Crepe Nanou',
   type: 'French',
-  rating: '4 stars',
+  rating: 4,
   inStock: true,
   addRating: function() {
     this.rating += 1;
+    console.log(`${this.name}, the well known ${this.type} restaurant is rated ${this.rating} stars.`);
   },
   reopen: function() {
-    console.log(`${this.name} `)
+    console.log(`${this.name}, the well known ${this.type} restaurant is now rated ${this.rating} stars`);
   }
-};
+}
 
 console.log("\nToDo 4: Restaurant");
-console.log(restaurant.name);   
-console.log(restaurant.type);   
-console.log(restaurant.rating); 
+  
+restaurant.reopen(); 
+restaurant.addRating(); 
+restaurant.reopen();
+
 
 
 // Example 5: Adding Methods to a Student Object
