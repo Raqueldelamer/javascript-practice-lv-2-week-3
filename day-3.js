@@ -18,7 +18,36 @@ console.log(defaultBook); // Output: { title: 'The Great Gatsby', author: 'F. Sc
 // - name: 'Buddy'
 // - species: 'Dog'
 // - age: 2
+console.log("\nToDo1: Factory Function with Pets");
+function createPet(nameInput, ageInput, furInput) {
+  let pet= {
+    name: nameInput,
+    age: ageInput,
+    fur: furInput,
+    haveABirthday: function() {
+      console.log(`Happy Birthday ${this.name}`)
+      this.age += 1;
+    },
+    status: function() {
+      console.log(`Name: ${this.name} Age: ${this.age} Fur: ${this.fur}`)
+    }
+  }
+  console.log("Created a pet...")
+  pet.status()
+  return pet;
+}
 
+let pet1 = createPet("Minou", 3, true);
+let pet2 = createPet("Sheba", 2, true);
+let pet3 = createPet("Orpheo", 1, false);
+
+pet1.haveABirthday();
+pet2.haveABirthday();
+pet3.haveABirthday();
+pet1.status();
+pet2.status();
+pet3.fur = false;
+pet3.status();
 
 // Example 2: Factory Function with Default Properties
 function createCar() {

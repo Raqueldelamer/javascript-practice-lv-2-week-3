@@ -44,7 +44,7 @@ console.log(pet.age);     // Output: 5
 // Log each property using dot notation.
 const city = {
   name: 'Montreal',
-  population: '1,800,055',
+  population: '1800055',
   country: 'Canada'
 };
 console.log("\nToDo 2: City");
@@ -101,8 +101,8 @@ const restaurant = {
 };
 
 console.log("\nToDo 4: Restaurant");
-console.log(restaurant.name);    // Output: Laptop
-console.log(restaurant.type);   // Output: 999.99
+console.log(restaurant.name);    
+console.log(restaurant.type);   
 console.log(restaurant.rating); 
 
 // Example 5: Creating a Student Object

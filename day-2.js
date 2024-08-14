@@ -25,6 +25,20 @@ console.log(book.pages); // Output: 300
 // Add a method named `watch` that logs a message: "You watched {movie.title}."
 // Add another method named `updateYear` that updates the `year` property.
 // Use `this` to access and modify the properties.
+let movie = {
+  title: "Marie Antoinette",
+  year: 2006,
+  watch: function() {
+    console.log(`You watched the movie ${this.title}`)
+  },
+  updateYear: function (y) {
+    this.year = y;
+  }
+}
+movie.watch();
+console.log(movie);
+movie.updateYear(2005);
+console.log(movie);
 
 
 // Example 2: Adding Methods to a Pet Object
@@ -49,7 +63,21 @@ console.log(pet.name);  // Output: Paws
 // TODO 2: Add a method to `city` object
 // Add a method named `addPopulation` that increases the `population` property by a given number.
 // Add another method named `rename` that updates the `name` property using `this`.
-
+const city = {
+  name: "Montreal",
+  pop:  1800055,
+  addPop: function() {
+    this.pop += 1000; 
+  
+      },
+  status: function(){
+    console.log(`${this.name} has ${this.pop} people residing in it.`);
+  }
+}
+console.log("\nToDo 2: City")
+city.status();
+city.addPop();
+city.status();
 
 // Example 3: Adding Methods to a Car Object
 const car = {
@@ -72,6 +100,21 @@ console.log(car.year); // Output: 2023
 // TODO 3: Add a method to `computer` object
 // Add a method named `upgradeRAM` that updates the `ram` property.
 // Add another method named `describe` that logs a message with the `brand`, `processor`, and `ram` properties.
+const computer = {
+  brand: 'Apple',
+  processor: 'Intel',
+  ram: 100,
+  addRam: function() {
+    this.ram += 92; 
+},
+describe: function(){
+  console.log(`${this.processor} based ${this.brand} laptop has ${this.ram} more GB of ram.`);
+  }
+}
+console.log("\nToDo 3: Computer");
+computer.describe();
+computer.addRam();
+computer.describe();
 
 
  // Example 4: Adding Methods to a Product Object
@@ -97,6 +140,23 @@ console.log(product.inStock); // Output: false
 // TODO 4: Add a method to `restaurant` object
 // Add a method named `changeRating` that updates the `rating` property.
 // Add another method named `reopen` that sets the `inStock` property to true.
+const restaurant = {
+  name: 'Crepe Nanou',
+  type: 'French',
+  rating: '4 stars',
+  inStock: true,
+  addRating: function() {
+    this.rating += 1;
+  },
+  reopen: function() {
+    console.log(`${this.name} `)
+  }
+};
+
+console.log("\nToDo 4: Restaurant");
+console.log(restaurant.name);   
+console.log(restaurant.type);   
+console.log(restaurant.rating); 
 
 
 // Example 5: Adding Methods to a Student Object
