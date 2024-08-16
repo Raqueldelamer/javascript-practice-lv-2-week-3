@@ -21,9 +21,9 @@ const movie = {
   year: 1992
 };
 console.log("\nToDo 1: Movie");
-console.log(movie.title);  // Output: To Kill a Mockingbird
-console.log(movie.director); // Output: Harper Lee
-console.log(movie.year); 
+console.log(movie.title);  // Output: title
+console.log(movie.director); // Output: director
+console.log(movie.year);   // Output: year
 
 
 // Example 2: Creating a Pet Object
@@ -48,9 +48,9 @@ const city = {
   country: 'Canada'
 };
 console.log("\nToDo 2: City");
-console.log(city.name);    // Output: Whiskers
-console.log(city.population); // Output: Cat
-console.log(city.country); 
+console.log(city.name);    // Output: citys
+console.log(city.population); // Output: population
+console.log(city.country);  // output: country
 
 // Example 3: Creating a Car Object
 const car = {
