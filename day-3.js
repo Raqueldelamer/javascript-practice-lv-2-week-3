@@ -18,38 +18,19 @@ console.log(defaultBook); // Output: { title: 'The Great Gatsby', author: 'F. Sc
 // - name: 'Buddy'
 // - species: 'Dog'
 // - age: 2
-console.log("\nToDo1: Factory Function with Pets");
-function createPet(nameInput, ageInput, furInput) {
+console.log("\nToDo 1: Factory Function with Pet");
+function createPet() {
   let pet= {
-    name: nameInput,
-    age: ageInput,
-    fur: furInput,
-    haveABirthday: function() {
-      console.log(`Happy Birthday ${this.name}`)
-      this.age += 1;
-    },
-    status: function() {
-      console.log(`Name: ${this.name} Age: ${this.age} Fur: ${this.fur}`)
-    }
+    name: 'Buddy',
+    species: "Dog",
+    age: 2,
   }
-  console.log("Created a pet...")
-  pet.status()
-  return pet;
+    return pet 
 }
+    const defaultPet = createPet();
+    console.log(defaultPet);
 
-let pet1 = createPet("Minou", 3, true);
-let pet2 = createPet("Sheba", 2, true);
-let pet3 = createPet("Orpheo", 1, false);
-
-pet1.haveABirthday();
-pet2.haveABirthday();
-pet3.haveABirthday();
-pet1.status();
-pet2.status();
-pet3.fur = false;
-pet3.status();
-
-// Example 2: Factory Function with Default Properties
+    // Example 2: Factory Function with Default Properties
 function createCar() {
   return {
     brand: 'Toyota',
@@ -67,7 +48,14 @@ console.log(defaultCar); // Output: { brand: 'Toyota', model: 'Corolla', year: 2
 // - name: 'Springfield'
 // - population: 30000
 // - country: 'USA'
-
+console.log("\nToDo 2: createCity");
+function createCity(){
+  return{
+    name: 'Springfield',
+    population: 30000,
+    country: 'USA'
+  };
+}
 
 // Example 3: Factory Function with Arguments
 function createBookWithDetails(title, author, pages) {
@@ -87,7 +75,17 @@ console.log(specificBook); // Output: { title: '1984', author: 'George Orwell', 
 // - name
 // - species
 // - age
+console.log("\nToDo 3: createPetWithDetails");
+function createPetWithDetails(name, species, age) {
+  return {
+  name: name,
+  species: species,
+  age: age,
+  }; 
+}
 
+const specificPet = createPetWithDetails('Minou', 'Cat', 3);
+console.log(specificPet);
 
 // Example 4: Factory Function with Arguments
 function createCarWithDetails(brand, model, year) {
@@ -107,7 +105,16 @@ console.log(specificCar); // Output: { brand: 'Tesla', model: 'Model S', year: 2
 // - name
 // - population
 // - country
-
+console.log("\nToDo 4: createCityWithDetails");
+function createCityWithDetails(name, population, country) {
+  return{
+  name: name,
+  population: population,
+  country: country,
+  }
+}
+const newCity = createCityWithDetails('San Juan', 340903,'Puerto Rico');
+console.log(newCity);
 
 // Example 5: Factory Function with Method
 function createPetWithMethod(name, species, age) {
@@ -132,4 +139,29 @@ myPet.celebrateBirthday(); // Output: Happy Birthday Bella! You are now 5 years 
 // - population
 // - country
 // Add a method named `changePopulation` that takes a number as an argument and updates the `population` property.
+console.log("\nToDo 5: createCityWithMethod");
+
+function createCityWithMethod(name, population, country) {
+  return{
+  name: name,
+  population: population,
+  country: country,
+ 
+  oldPopulation(newPopulation) {
+    this.population = newPopulation;
+  },
+  status() {
+    console.log(`${this.name} population is ${this.population}. `);
+  },
+  changePopulation() {
+    this.population += 5000;
+    console.log(`${this.name} population grew and is now ${this.population}.`);
+  }
+  }
+}
+const city = createCityWithMethod('San Juan', 340903,'USA');
+
+city.status();
+city.changePopulation();
+city.status();
 

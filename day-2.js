@@ -185,4 +185,30 @@ console.log(student.fullName()); // Output: John Doe
 // TODO 5: Add a method to `house` object
 // Add a method named `renovate` that increases the `size` property by a given number.
 // Add another method named `changeAddress` that updates the `address` property.
+console.log("\nToDo 5: Method House");
+
+const house = {
+  address: '1234 Jena St.',
+  size: 1350,
+
+  changeAddress(newAddress) {
+    this.address = newAddress;
+    
+  },
+  renovate () {
+    this.size += 1000;
+    console.log(`${this.address} is bigger, ${this.size} in square footage.`);
+  },
+
+  status() {
+    console.log(`${this.address} is ${this.size} in square footage.`);
+  }
+};
+
+house.status();
+house.changeAddress('1236 Jena St');
+house.renovate();
+house.status();
+
+
 

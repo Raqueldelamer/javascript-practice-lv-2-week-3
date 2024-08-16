@@ -13,15 +13,27 @@ function createSong(title, artist, year) {
 
 // Example 1: Create an array and populate it using the factory function
 const songs = [];
+console.log("\nToDo 1: Create 3 song objects");
 
 // TODO 1: Use the factory function to create three song objects with the following details and add them to the array `songs`:
 // 1. Title: 'Yesterday', Artist: 'The Beatles', Year: 1965
 // 2. Title: 'What a Wonderful World', Artist: 'Louis Armstrong', Year: 1967
 // 3. Title: 'Over the Rainbow', Artist: 'Judy Garland', Year: 1939
 // 4. One of your own.
+song = createSong('Yesterday', 'The Beatles', 1965);
+song1 = createSong('What a Wonderful World', 'Louis Armstrong', 1967);
+song2 = createSong('Over the Rainbow', 'Judy Garland', 1939);
+song3 = createSong('La Mer', 'Claude Debussy', 1905);
 
 // Example: 
-songs.push(createSong('Yesterday', 'The Beatles', 1965));
+// songs.push(createSong('Yesterday', 'The Beatles', 1965));
+songs.push(song);
+//songs.push(createSong('What a Wonderful World', 'Louis Armstrong', 1967));
+songs.push(song1);
+//songs.push(createSong('Over the Rainbow', 'Judy Garland', 1939));
+songs.push(song2);
+//songs.push(createSong('La Mer', 'Claude Debussy', 1905));
+songs.push(song3);
 
 console.table(songs);
 
@@ -32,9 +44,19 @@ console.log("\nExample 2: Accessing Objects in the Array");
 // - The title and artist of the first song
 // - The artist and year of the second song
 // - The title and year of the third song
+console.log("\nToDo 2");
+let yesterdaySong = songs[0];
+let wonderfulSong = songs[1];
+let rainbowSong = songs[2];
+let lamerSong = songs[3];
+
 
 // Example
 console.log("First song: Title = " + songs[0].title + ", Artist = " + songs[0].artist);
+console.log("Second song: Title = " + songs[1].title + ", Artist = " + songs[1].artist);
+console.log("Third song: Title = " + songs[2].title + ", Artist = " + songs[2].artist);
+console.log("Forth song: Title = " + songs[3].title + ", Artist = " + songs[3].artist);
+
 // TODO: Access and log the details of the rest of the songs in the array
 
 console.log("\nExample 3: Adding More Songs");
@@ -42,24 +64,32 @@ console.log("\nExample 3: Adding More Songs");
 // TODO 3: Add two more song objects to the `songs` array using the factory function:
 // 1. Title: 'My Way', Artist: 'Frank Sinatra', Year: 1969
 // 2. Title: 'Imagine', Artist: 'John Lennon', Year: 1971
-
+console.log("\nToDo 3");
 // Example 3: Adding More Songs
 songs.push(createSong('My Way', 'Frank Sinatra', 1969));
 songs.push(createSong('Imagine', 'John Lennon', 1971));
+songs.push(createSong('Fama', 'Rosalia', 2022));
+songs.push(createSong('Monaco', 'Bad Bunny', 2024));
 // TODO 3: Add two songs more of your own
+
 
 console.table(songs);
 
 console.log("\nExample 4: Accessing New Songs");
 
 // TODO 4: Modify the details of the newly added songs in the array:
-
+console.log("\nToDo 4");
 // Example:
 // - Title and artist of the fourth song
 songs[3].title = "Puff the Magic Dragon";
 songs[3].artist = "Peter, Paul, and Mary";
+songs[3].year = 1963;
+songs[4].title = "Imagine";
+songs[4].artist = "John Lennon";
+songs[4].year = 1971;
 
 console.log("Fourth song: Title = " + songs[3].title + ", Artist = " + songs[3].artist);
+console.log("Fifth song: Title =" + songs[4].title + ", Artist= " + songs[4].artist);
 
 // TODO 4:
 // Modify the details of the fifth song
@@ -74,10 +104,11 @@ console.log("\nExample 5: Modifying the Array");
 // - Title: 'Eleanor Rigby'
 // - Artist: 'The Beatles'
 // - Year: 1966
+console.log("\nToDo 5");
 
-songs[0] = createSong('Eleanor Rigby', 'The Beatles', 1966);
+songs[1] = createSong('Eleanor Rigby', 'The Beatles', 1966);
 
-console.log("Updated first song: Title = " + songs[0].title + ", Artist = " + songs[0].artist + ", Year = " + songs[0].year);
+console.log("Updated second song: Title = " + songs[1].title + ", Artist = " + songs[1].artist + ", Year = " + songs[1].year);
 
 // TODO 5: Completely Replace the details of the second song.
 
