@@ -160,7 +160,7 @@ console.log("\nToDo 4: Restaurant");
 restaurant.reopen(); 
 restaurant.addRating(); // Output added this.rating stars
 restaurant.reopen();
-console.log(restaurant.inStock);
+console.log(restaurant.inStock); // Output instock property 'true'
 
 
 
@@ -206,6 +206,6 @@ const house = {
 };
 
 house.status();
-house.changeAddress('1236 Jena St');
+house.changeAddress('1236 Jena St'); // Output changed address
 house.renovate();   // Output this.size more square footage 
 house.status();
