@@ -87,9 +87,13 @@ songs[3].year = 1963;
 songs[4].title = "Imagine";
 songs[4].artist = "John Lennon";
 songs[4].year = 1971;
+songs[5].title = "Fama";
+songs[5].artist = "Rosalia";
+songs[5].year = "2022";
 
 console.log("Fourth song: Title = " + songs[3].title + ", Artist = " + songs[3].artist);
 console.log("Fifth song: Title =" + songs[4].title + ", Artist= " + songs[4].artist);
+console.log("Sixth song: Title =" + songs[5].title + ", Artist= " + songs[5].artist);
 
 // TODO 4:
 // Modify the details of the fifth song

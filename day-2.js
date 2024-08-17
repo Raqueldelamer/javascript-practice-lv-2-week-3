@@ -68,7 +68,7 @@ const city = {
   pop:  1800055,
   addPop: function() {
     this.pop += 1000; 
-  
+    console.log(`${this.name} now has ${this.pop} people residing in it.`);
       },
   status: function(){
     console.log(`${this.name} has ${this.pop} people residing in it.`);
