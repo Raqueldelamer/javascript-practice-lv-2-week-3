@@ -83,7 +83,6 @@ function createPetWithDetails(name, species, age) {
   age: age,
   }; 
 }
-
 const specificPet = createPetWithDetails('Minou', 'Cat', 3);
 console.log(specificPet);
 
@@ -114,7 +113,7 @@ function createCityWithDetails(name, population, country) {
   }
 }
 const newCity = createCityWithDetails('San Juan', 340903,'Puerto Rico');
-console.log(newCity);
+console.log(newCity); // Output: { city: 'San Juan', population: '340903', country: 'Puerto Rico" }
 
 // Example 5: Factory Function with Method
 function createPetWithMethod(name, species, age) {
@@ -161,7 +160,6 @@ function createCityWithMethod(name, population, country) {
 }
 const city = createCityWithMethod('San Juan', 340903,'USA');
 
-city.status();
+city.status();  // Output original population
 city.changePopulation();
-city.status();
-
+city.status();  // Output new population 
