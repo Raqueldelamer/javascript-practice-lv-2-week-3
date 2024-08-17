@@ -20,10 +20,10 @@ const movie = {
   director: 'Francis Ford Coppola',
   year: 1992
 };
-console.log("\nToDo 1: Movie");
-console.log(movie.title);  // Output: title
+console.log("\nToDo 1: Movie Object");
+console.log(movie.title);    // Output: title
 console.log(movie.director); // Output: director
-console.log(movie.year);   // Output: year
+console.log(movie.year);     // Output: year
 
 
 // Example 2: Creating a Pet Object
@@ -47,10 +47,10 @@ const city = {
   population: '1800055',
   country: 'Canada'
 };
-console.log("\nToDo 2: City");
-console.log(city.name);    // Output: citys
+console.log("\nToDo 2: City Object");
+console.log(city.name);       // Output: city name
 console.log(city.population); // Output: population
-console.log(city.country);  // output: country
+console.log(city.country);    // Output: country
 
 // Example 3: Creating a Car Object
 const car = {
@@ -69,14 +69,14 @@ console.log(car.year);   // Output: 2021
 // `brand` (string), `processor` (string), `ram` (number)
 // Log each property using dot notation.
 const computer = {
-  brand: 'Apple',
+  brand: 'Mac',
   processor: 'Intel',
   ram: '100GB',
 };
-console.log("\nToDo 3: Computer");
-console.log(computer.brand);  
-console.log(computer.processor);  
-console.log(computer.ram);
+console.log("\nToDo 3: Computer Object");
+console.log(computer.brand);      // output Mac
+console.log(computer.processor);  // output Intel
+console.log(computer.ram);        // output 100GB ram 
 
 // Example 4: Creating a Product Object
 const product = {
@@ -100,10 +100,10 @@ const restaurant = {
   rating: '4 stars'
 };
 
-console.log("\nToDo 4: Restaurant");
-console.log(restaurant.name);    
-console.log(restaurant.type);   
-console.log(restaurant.rating); 
+console.log("\nToDo 4: Restaurant Object");
+console.log(restaurant.name);       // output restaurant name
+console.log(restaurant.type);       // output restaurant type
+console.log(restaurant.rating);     // output restaurant rating
 
 // Example 5: Creating a Student Object
 const student = {
@@ -127,7 +127,7 @@ const house = {
   hasGarage: 'No'
 };
 
-console.log("\nToDo 5: House");
+console.log("\nToDo 5: House Object");
 console.log(house.address); // Output: address
 console.log(house.size);  // Output: size
 console.log(house.hasGarage);  //Output: (has garage) No
