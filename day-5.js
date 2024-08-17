@@ -68,8 +68,8 @@ console.log("\nToDo 3");
 // Example 3: Adding More Songs
 songs.push(createSong('My Way', 'Frank Sinatra', 1969));
 songs.push(createSong('Imagine', 'John Lennon', 1971));
-songs.push(createSong('Fama', 'Rosalia', 2022));
-songs.push(createSong('Monaco', 'Bad Bunny', 2024));
+songs.push(createSong('Fama', 'Rosalia', 2022)); // added song
+songs.push(createSong('Monaco', 'Bad Bunny', 2024)); // added song
 // TODO 3: Add two songs more of your own
 
 
@@ -78,7 +78,7 @@ console.table(songs);
 console.log("\nExample 4: Accessing New Songs");
 
 // TODO 4: Modify the details of the newly added songs in the array:
-console.log("\nToDo 4");
+console.log("\nToDo 4: Modify details of new songs");
 // Example:
 // - Title and artist of the fourth song
 songs[3].title = "Puff the Magic Dragon";
@@ -87,14 +87,17 @@ songs[3].year = 1963;
 songs[4].title = "Imagine";
 songs[4].artist = "John Lennon";
 songs[4].year = 1971;
-songs[5].title = "Fama";
+songs[5].title = "Fama"; // modified details of 6th song
 songs[5].artist = "Rosalia";
-songs[5].year = "2022";
+songs[5].year = 2022;
+songs[6].title = "Monaco";   // modified details of 7th song
+songs[6].artist = "Bad Bunny";
+songs[6].year = 2024;
 
 console.log("Fourth song: Title = " + songs[3].title + ", Artist = " + songs[3].artist);
-console.log("Fifth song: Title =" + songs[4].title + ", Artist= " + songs[4].artist);
-console.log("Sixth song: Title =" + songs[5].title + ", Artist= " + songs[5].artist);
-
+console.log("Fifth song: Title = " + songs[4].title + ", Artist= " + songs[4].artist);
+console.log("Sixth song: Title = " + songs[5].title + ", Artist= " + songs[5].artist);
+console.log("Seventh song: Title = " + songs[6].title + ", Artist= " + songs[6].artist);
 // TODO 4:
 // Modify the details of the fifth song
 // - Artist and year of the fifth song
