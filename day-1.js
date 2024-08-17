@@ -128,6 +128,6 @@ const house = {
 };
 
 console.log("\nToDo 5: House");
-console.log(house.address); // Output: John
-console.log(house.size);  // Output: Doe
-console.log(house.hasGarage);  
+console.log(house.address); // Output: address
+console.log(house.size);  // Output: size
+console.log(house.hasGarage);  //Output: (has garage) No
