@@ -76,8 +76,8 @@ const city = {
 }
 console.log("\nToDo 2: City")
 city.status();
-city.addPop();
-city.status();
+city.addPop(); // output added population 
+city.status(); // output status with new population
 
 // Example 3: Adding Methods to a Car Object
 const car = {
@@ -101,7 +101,7 @@ console.log(car.year); // Output: 2023
 // Add a method named `upgradeRAM` that updates the `ram` property.
 // Add another method named `describe` that logs a message with the `brand`, `processor`, and `ram` properties.
 const computer = {
-  brand: 'Apple',
+  brand: 'Mac',
   processor: 'Intel',
   ram: 100,
   addRam: function() {
@@ -113,7 +113,7 @@ describe: function(){
 }
 console.log("\nToDo 3: Computer");
 computer.describe();
-computer.addRam();
+computer.addRam(); // output with added this.ram
 computer.describe();
 
 
@@ -158,7 +158,7 @@ const restaurant = {
 console.log("\nToDo 4: Restaurant");
   
 restaurant.reopen(); 
-restaurant.addRating(); 
+restaurant.addRating(); // Output added this.rating stars
 restaurant.reopen();
 console.log(restaurant.inStock);
 
@@ -207,8 +207,5 @@ const house = {
 
 house.status();
 house.changeAddress('1236 Jena St');
-house.renovate();
+house.renovate();   // Output this.size more square footage 
 house.status();
-
-
-
