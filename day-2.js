@@ -28,13 +28,14 @@ console.log(book.pages); // Output: 300
 let movie = {
   title: "Marie Antoinette",
   year: 2006,
-  watch: function() {
-    console.log(`You watched the movie ${this.title}`)
+  watch() {
+    this.year += 1;
+    console.log(`You watched the movie ${this.title} in ${this.year}.`)
   },
-  updateYear: function (y) {
+  updateYear(y) {
     this.year = y;
-  }
-}
+  },
+};
 movie.watch();
 console.log(movie);
 movie.updateYear(2005);
@@ -76,8 +77,8 @@ const city = {
 }
 console.log("\nToDo 2: City")
 city.status();
-city.addPop(); // output added population 
-city.status(); // output status with new population
+city.addPop(); // Output added population 
+city.status(); // Output status with new population
 
 // Example 3: Adding Methods to a Car Object
 const car = {
@@ -113,7 +114,7 @@ describe: function(){
 }
 console.log("\nToDo 3: Computer");
 computer.describe();
-computer.addRam(); // output with added this.ram
+computer.addRam();     // Output with added this.ram
 computer.describe();
 
 
@@ -158,7 +159,7 @@ const restaurant = {
 console.log("\nToDo 4: Restaurant");
   
 restaurant.reopen(); 
-restaurant.addRating(); // Output added this.rating stars
+restaurant.addRating();          // Output added this.rating stars
 restaurant.reopen();
 console.log(restaurant.inStock); // Output instock property 'true'
 
@@ -179,7 +180,7 @@ const student = {
 };
 
 console.log("\nExample 5: Student Object with Methods");
-student.updateGrade('B');  // Output: John Doe is now in grade B.
+student.updateGrade('B');        // Output: John Doe is now in grade B.
 console.log(student.fullName()); // Output: John Doe
 
 // TODO 5: Add a method to `house` object
@@ -207,5 +208,5 @@ const house = {
 
 house.status();
 house.changeAddress('1236 Jena St'); // Output changed address
-house.renovate();   // Output this.size more square footage 
+house.renovate();                    // Output this.size more square footage 
 house.status();
