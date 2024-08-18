@@ -106,7 +106,7 @@ console.log("\nExample 5: Modifying the Array");
 // - Title: 'Eleanor Rigby'
 // - Artist: 'The Beatles'
 // - Year: 1966
-console.log("\nToDo 5: Completely Replace the details of the second song");
+console.log("\nToDo 5: Completely Replace the details of the first song");
 
 songs[0] = createSong('Eleanor Rigby', 'The Beatles', 1966);
 
