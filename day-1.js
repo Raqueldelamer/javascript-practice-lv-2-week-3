@@ -124,7 +124,7 @@ console.log(student.grade);     // Output: A
 const house = {
   address: '1234 Jena St.',
   size: '2bdrm, 1 bth',
-  hasGarage: 'No'
+  hasGarage: 'No Garage'
 };
 
 console.log("\nToDo 5: House Object");
