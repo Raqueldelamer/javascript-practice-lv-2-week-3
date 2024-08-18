@@ -49,13 +49,15 @@ console.log(defaultCar); // Output: { brand: 'Toyota', model: 'Corolla', year: 2
 // - population: 30000
 // - country: 'USA'
 console.log("\nToDo 2: createCity");
-function createCity(){
-  return{
+function createCity() {
+  return {
     name: 'Springfield',
     population: 30000,
-    country: 'USA'
+    country: 'USA',
   };
 }
+const defaultCity = createCity();
+console.log(defaultCity); 
 
 // Example 3: Factory Function with Arguments
 function createBookWithDetails(title, author, pages) {
