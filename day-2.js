@@ -35,11 +35,11 @@ let movie = {
   },
   updateYear(y) {
     this.year = y;
-  },
-};
+  }
+}
 movie.watch();
 console.log(movie);
-movie.updateYear(2005);
+movie.updateYear(2006);
 console.log(movie);
 
 
@@ -56,7 +56,6 @@ const pet = {
     this.name = newName;
   }
 };
-
 console.log("\nExample 2: Pet Object with Methods");
 pet.celebrateBirthday(); // Output: Happy Birthday Whiskers! You are now 6 years old.
 pet.rename('Paws');
