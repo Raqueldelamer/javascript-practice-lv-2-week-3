@@ -25,6 +25,7 @@ console.log(book.pages); // Output: 300
 // Add a method named `watch` that logs a message: "You watched {movie.title}."
 // Add another method named `updateYear` that updates the `year` property.
 // Use `this` to access and modify the properties.
+console.log("ToDo 2: Movie Object with Methods");
 let movie = {
   title: "Marie Antoinette",
   year: 2006,
@@ -75,7 +76,7 @@ const city = {
     console.log(`${this.name} has ${this.pop} people residing in it.`);
   }
 }
-console.log("\nToDo 2: City")
+console.log("\nToDo 2: Method to City Object")
 city.status();
 city.addPop(); // Output added population 
 city.status(); // Output status with new population
@@ -112,7 +113,7 @@ describe: function(){
   console.log(`${this.processor} based ${this.brand} laptop has ${this.ram} more GB of ram.`);
   }
 }
-console.log("\nToDo 3: Computer");
+console.log("\nToDo 3: Method to Computer Object");
 computer.describe();
 computer.addRam();     // Output with added this.ram
 computer.describe();
@@ -156,7 +157,7 @@ const restaurant = {
   
 }
 
-console.log("\nToDo 4: Restaurant");
+console.log("\nToDo 4: Add Method to Restaurant Object");
   
 restaurant.reopen(); 
 restaurant.addRating();          // Output added this.rating stars
@@ -186,7 +187,7 @@ console.log(student.fullName()); // Output: John Doe
 // TODO 5: Add a method to `house` object
 // Add a method named `renovate` that increases the `size` property by a given number.
 // Add another method named `changeAddress` that updates the `address` property.
-console.log("\nToDo 5: Method House");
+console.log("\nToDo 5: Add Method to House Object");
 
 const house = {
   address: '1234 Jena St.',
