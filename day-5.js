@@ -78,18 +78,18 @@ console.log("\nExample 4: Accessing New Songs");
 console.log("\nToDo 4: Modify details of new songs");
 // Example:
 // - Title and artist of the fourth song
-songs[3].title = "Puff the Magic Dragon";
-songs[3].artist = "Peter, Paul, and Mary";
-songs[3].year = 1963;
-songs[4].title = "Imagine";
-songs[4].artist = "John Lennon";
-songs[4].year = 1971;
-songs[5].title = "Fama"; // modified details of 6th song
-songs[5].artist = "Rosalia";
-songs[5].year = 2022;
-songs[6].title = "Monaco";   // modified details of 7th song
-songs[6].artist = "Bad Bunny";
-songs[6].year = 2024;
+songs[4].title = "Puff the Magic Dragon";
+songs[4].artist = "Peter, Paul, and Mary";
+songs[4].year = 1963;
+songs[5].title = "Imagine";
+songs[5].artist = "John Lennon";
+songs[5].year = 1971;
+songs[6].title = "Fama"; // modified details of 6th song
+songs[6].artist = "Rosalia";
+songs[6].year = 2022;
+songs[7].title = "Monaco";   // modified details of 7th song
+songs[7].artist = "Bad Bunny";
+songs[7].year = 2024;
 
 console.log("Fourth song: Title = " + songs[3].title + ", Artist = " + songs[3].artist);
 console.log("Fifth song: Title = " + songs[4].title + ", Artist= " + songs[4].artist);
@@ -108,11 +108,8 @@ console.log("\nExample 5: Modifying the Array");
 // - Year: 1966
 console.log("\nToDo 5: Completely Replace the details of the second song");
 
-songs[1] = createSong('Eleanor Rigby', 'The Beatles', 1966);
+songs[0] = createSong('Eleanor Rigby', 'The Beatles', 1966);
 
-console.log("Updated second song: Title = " + songs[1].title + ", Artist = " + songs[1].artist + ", Year = " + songs[1].year);
+console.log("Updated first song: Title = " + songs[0].title + ", Artist = " + songs[0].artist + ", Year = " + songs[0].year);
 
-
-
-
-
+console.table(songs);
