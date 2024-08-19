@@ -84,17 +84,18 @@ songs[4].year = 1963;
 songs[5].title = "Imagine";
 songs[5].artist = "John Lennon";
 songs[5].year = 1971;
-songs[6].title = "Fama"; // modified details of 6th song
+songs[6].title = "Fama"; // modified details of 7th song
 songs[6].artist = "Rosalia";
 songs[6].year = 2022;
-songs[7].title = "Monaco";   // modified details of 7th song
+songs[7].title = "Monaco";   // modified details of 8th song
 songs[7].artist = "Bad Bunny";
 songs[7].year = 2024;
 
 console.log("Fourth song: Title = " + songs[3].title + ", Artist = " + songs[3].artist);
-console.log("Fifth song: Title = " + songs[4].title + ", Artist= " + songs[4].artist);
-console.log("Sixth song: Title = " + songs[5].title + ", Artist= " + songs[5].artist);
+console.log("Fifth song: Title = " + songs[4].title + ", Artist= " + songs[4].artist);    // modified 5th song
+console.log("Sixth song: Title = " + songs[5].title + ", Artist= " + songs[5].artist); 
 console.log("Seventh song: Title = " + songs[6].title + ", Artist= " + songs[6].artist);
+console.log("Eighth song: Title = " + songs[7].title + ", Artist= " + songs[7].artist);
 // TODO 4:
 // Modify the details of the fifth song
 
